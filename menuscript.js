@@ -21,56 +21,22 @@ function menuclick() {
 
 function menuMove() {
     console.log("the function has started");
-    var ypos = -80;
-    var id = setInterval(frame, 1);
-    function frame() {
-        if (ypos == 270) {
-            clearInterval(id);
-        } else {
-            ypos = (ypos + 1);
-            menu.style.bottom = ypos + 'px';
-        }
-    }
+    menu.classList.add("showmenulist");
+    menu.style.bottom = "270px";
 }
 
 function menuReverse() {
     console.log("the function has started");
-    var ypos = 270;
-    var id = setInterval(frame, 1);
-    function frame() {
-        if (ypos == -80) {
-            clearInterval(id);
-        } else {
-            ypos = (ypos - 1);
-            menu.style.bottom = ypos + 'px';
-        }
-    }
+    menu.classList.add("hidemenulist");
+    menu.style.bottom = "-80px";
 }
 
 function backgroundMove() {
     console.log("the function has started");
-    var ypos = -350;
-    var id = setInterval(frame, 1);
-    function frame() {
-        if (ypos == 0) {
-            clearInterval(id);
-        } else {
-            ypos = (ypos + 1);
-            background.style.bottom = ypos + 'px';
-        }
-    }
+
 }
 
 function backgroundReverse() {
     console.log("the function has started");
-    var ypos = 0;
-    var id = setInterval(frame, 1);
-    function frame() {
-        if (ypos == -350) {
-            clearInterval(id);
-        } else {
-            ypos = (ypos - 1);
-            background.style.bottom = ypos + 'px';
-        }
-    }
+
 }
