@@ -39,6 +39,29 @@ body {
         visibility: visible;
     }
 
+    .showmenuimage{
+        animation-name: showmi;
+        animation-duration: 2s;
+        //animation-iteration-count: 1;
+    }
+
+    @keyframes showmi {
+        0% {bottom: -350px;}
+        100% {bottom: 0px;}
+    }
+
+    .hidemenuimage{
+        animation-name: hidemi;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes hidemi {
+        0% {bottom: 0px;}
+        100% {bottom: -350px;}
+    }
+
+
     .homewrapper {
         width: 100vw;
         height: 100vh;
@@ -92,23 +115,23 @@ body {
     }
 
     .showmenulist{
-        animation-name: show;
+        animation-name: showml;
         animation-duration: 2s;
         //animation-iteration-count: 1;
     }
 
-    @keyframes show {
+    @keyframes showml {
         0% {bottom: -80px;}
         100% {bottom: 270px;}
     }
 
     .hidemenulist{
-        animation-name: hide;
+        animation-name: hideml;
         animation-duration: 2s;
         animation-iteration-count: 1;
     }
 
-    @keyframes hide {
+    @keyframes hideml {
         0% {bottom: 270px;}
         100% {bottom: -80px;}
     }
