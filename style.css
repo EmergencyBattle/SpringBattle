@@ -205,6 +205,29 @@ body {
         padding-top: 3px;
         padding-bottom: 3px;
     }
+
+
+    .portfoliopagewrapper{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .portfoliowrapper{
+        width: 95vw;
+        height: 95vw;
+        position: absolute;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        left: 0;
+        right: 0;
+        bottom: 250px;
+        top: auto;
+        background-color: red;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
