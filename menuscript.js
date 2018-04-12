@@ -1,5 +1,6 @@
 var menu = document.getElementById("mainmenu");
 var background = document.getElementById("menupicture");
+var menufade = document.getElementById("menufade");
 
 var hasrun = false;
 
@@ -9,11 +10,13 @@ function menuclick() {
     if (hasrun == true) {
         menuReverse();
         backgroundReverse();
+        fadeReverse();
         hasrun = false;
         console.log("trying to reverse");
     } else {
         menuMove();
         backgroundMove();
+        fadeMove();
         hasrun = true;
         console.log("trying to animate");
     }
@@ -64,5 +67,29 @@ function backgroundReverse() {
         console.log("removed showmenuimage");
     } else {
         console.log("no showmenuimage to remove");
+    }
+}
+
+function fadeMove() {
+    console.log("the function has started");
+    menufade.classList.add("showmenufade");
+    menufade.style.backgroundColor = "hsla(229, 34%, 34%, 0.9)";
+    if (menufade.classList.contains("hidemenufade")) {
+        menufade.classList.remove("hidemenufade");
+        console.log("removed hidemenufade");
+    } else {
+        console.log("no hidemenufade to remove");
+    }
+}
+
+function fadeReverse() {
+    console.log("the function has started");
+    menufade.classList.add("hidemenufade");
+    menufade.style.backgroundColor = "hsla(229, 34%, 34%, 0.0)";
+    if (menufade.classList.contains("showmenufade")) {
+        menufade.classList.remove("showmenufade");
+        console.log("removed showmenufade");
+    } else {
+        console.log("no showmenufade to remove");
     }
 }

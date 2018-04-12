@@ -61,6 +61,39 @@ body {
         100% {bottom: -350px;}
     }
 
+    .menufade {
+        width: 100vw;
+        height: 100vh;
+        background-color: hsla(229, 34%, 34%, 0.0);
+        z-index:3;
+        position: absolute;
+    }
+
+    .showmenufade{
+        animation-name: showmf;
+        animation-duration: 2s;
+        //animation-iteration-count: 1;
+    }
+
+    @keyframes showmf {
+        0% {background-color: hsla(229, 34%, 34%, 0.0);}
+        60% {background-color: hsla(229, 34%, 34%, 0.85);}
+        100% {background-color: hsla(229, 34%, 34%, 0.9);}
+    }
+
+    .hidemenufade{
+        animation-name: hidemf;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes hidemf {
+        0% {background-color: hsla(229, 34%, 34%, 0.9);}
+        40% {background-color: hsla(229, 34%, 34%, 0.9);}
+        90% {background-color: hsla(229, 34%, 34%, 0.05);}
+        100% {background-color: hsla(229, 34%, 34%, 0.0);}
+    }
+
 
     .homewrapper {
         width: 100vw;
