@@ -1,6 +1,7 @@
 var menu = document.getElementById("mainmenu");
 var background = document.getElementById("menupicture");
 var menufade = document.getElementById("menufade");
+var portfolio = document.getElementById("portfoliopagewrapper");
 
 var hasrun = false;
 
@@ -8,12 +9,15 @@ var hasrun = false;
 function menuclick() {
     console.log("clicked");
     if (hasrun == true) {
+
         menuReverse();
         backgroundReverse();
         fadeReverse();
         hasrun = false;
         console.log("trying to reverse");
+        setTimeout(function(){portfolioContentZIndexHigher();},1000);
     } else {
+        portfolioContentZIndexLower();
         menuMove();
         backgroundMove();
         fadeMove();
@@ -92,4 +96,15 @@ function fadeReverse() {
     } else {
         console.log("no showmenufade to remove");
     }
+}
+
+
+function portfolioContentZIndexHigher() {
+    portfolio.style.zIndex = "26";
+    console.log("higher");
+}
+
+function portfolioContentZIndexLower() {
+        portfolio.style.zIndex = "12";
+        console.log("lower");
 }
