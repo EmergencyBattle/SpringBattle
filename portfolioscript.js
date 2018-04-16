@@ -1,5 +1,5 @@
 // JavaScript source code
-//var thesismodal = document.getElementById("thesisModal");
+var thesismodal = document.getElementById("thesisModal");
 var istwtmodal = document.getElementById("istwtModal");
 var lumbermodal = document.getElementById("lumberModal");
 var awdmodal = document.getElementById("awdModal");
@@ -12,7 +12,7 @@ var susannamodal = document.getElementById("susannaModal");
 
 
 // Get the button that opens the modal
-//var thesisthumb = document.getElementById("thesis");
+var thesisthumb = document.getElementById("thesis");
 var istwtthumb = document.getElementById("istwt");
 var lumberthumb = document.getElementById("lumber");
 var awdthumb = document.getElementById("awd");
@@ -24,8 +24,8 @@ var compthumb = document.getElementById("comp");
 var susannathumb = document.getElementById("susanna");
 
 // Get the <span> element that closes the modal
-//var thesisClose = document.getElementById("thesisclose");
-//var thesisCtc = document.getElementById("thesisctc");
+var thesisClose = document.getElementById("thesisclose");
+var thesisCtc = document.getElementById("thesisctc");
 var istwtClose = document.getElementById("istwtclose");
 var istwtCtc = document.getElementById("istwtctc");
 var lumberClose = document.getElementById("lumberclose");
@@ -46,9 +46,9 @@ var susannaClose = document.getElementById("susannaclose");
 var susannaCtc = document.getElementById("susannactc");
 
 // When the user clicks on the button, open the modal
-//thesisthumb.onclick = function () {
-//    thesismodal.style.display = "block";
-//}
+thesisthumb.onclick = function () {
+    thesismodal.style.display = "block";
+}
 istwtthumb.onclick = function () {
     istwtmodal.style.display = "block";
 }
@@ -79,12 +79,12 @@ susannathumb.onclick = function () {
 }
 
 // When the user clicks on <span> (x), close the modal
-//thesisClose.onclick = function () {
-//    thesismodal.style.display = "none";
-//}
-//thesisCtc.onclick = function () {
-//    thesismodal.style.display = "none";
-//}
+thesisClose.onclick = function () {
+    thesismodal.style.display = "none";
+}
+thesisCtc.onclick = function () {
+    thesismodal.style.display = "none";
+}
 istwtClose.onclick = function () {
     istwtmodal.style.display = "none";
 }
@@ -142,9 +142,9 @@ susannaCtc.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-//    if (event.target == thesismodal) {
-//        thesismodal.style.display = "none";
-//    }
+    if (event.target == thesismodal) {
+        thesismodal.style.display = "none";
+    }
     if (event.target == istwtmodal) {
         istwtmodal.style.display = "none";
     }
