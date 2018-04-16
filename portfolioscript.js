@@ -59,37 +59,108 @@ thesisthumb.onclick = function () {
 }
 istwtthumb.onclick = function () {
     istwtmodal.style.display = "block";
+    istwtmodal.className += " projectmodalfadein";
+    istwtmodal.style.opacity= "1.0" ;
+    if (istwtmodal.classList.contains("projectmodalfadeout")) {
+        istwtmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 lumberthumb.onclick = function () {
     lumbermodal.style.display = "block";
+    lumbermodal.className += " projectmodalfadein";
+    lumbermodal.style.opacity= "1.0" ;
+    if (lumbermodal.classList.contains("projectmodalfadeout")) {
+        lumbermodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 awdthumb.onclick = function () {
     awdmodal.style.display = "block";
+    awdmodal.className += " projectmodalfadein";
+    awdmodal.style.opacity= "1.0" ;
+    if (awdmodal.classList.contains("projectmodalfadeout")) {
+        awdmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
-
 sprakthumb.onclick = function () {
     sprakmodal.style.display = "block";
+    sprakmodal.className += " projectmodalfadein";
+    sprakmodal.style.opacity= "1.0" ;
+    if (sprakmodal.classList.contains("projectmodalfadeout")) {
+        sprakmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 avfallthumb.onclick = function () {
     avfallmodal.style.display = "block";
+    avfallmodal.className += " projectmodalfadein";
+    avfallmodal.style.opacity= "1.0" ;
+    if (avfallmodal.classList.contains("projectmodalfadeout")) {
+        avfallmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 kramforsthumb.onclick = function () {
     kramforsmodal.style.display = "block";
+    kramforsmodal.className += " projectmodalfadein";
+    kramforsmodal.style.opacity= "1.0" ;
+    if (kramforsmodal.classList.contains("projectmodalfadeout")) {
+        kramforsmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 sambthumb.onclick = function () {
     sambmodal.style.display = "block";
+    sambmodal.className += " projectmodalfadein";
+    sambmodal.style.opacity= "1.0" ;
+    if (sambmodal.classList.contains("projectmodalfadeout")) {
+        sambmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 compthumb.onclick = function () {
     compmodal.style.display = "block";
+    compmodal.className += " projectmodalfadein";
+    compmodal.style.opacity= "1.0" ;
+    if (compmodal.classList.contains("projectmodalfadeout")) {
+        compmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 susannathumb.onclick = function () {
     susannamodal.style.display = "block";
+    susannamodal.className += " projectmodalfadein";
+    susannamodal.style.opacity= "1.0" ;
+    if (susannamodal.classList.contains("projectmodalfadeout")) {
+        susannamodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
 }
 
 // When the user clicks on <span> (x), close the modal
 thesisClose.onclick = function () {
     thesismodal.className += " projectmodalfadeout";
-    setTimeout(function(){thesisBlockNone();},1000);
+    setTimeout(function(){thesisBlockNone();},500);
     thesismodal.style.opacity= "0.0" ;
     if (thesismodal.classList.contains("projectmodalfadein")) {
         thesismodal.classList.remove("projectmodalfadein");
@@ -100,7 +171,7 @@ thesisClose.onclick = function () {
 }
 thesisCtc.onclick = function () {
     thesismodal.className += " projectmodalfadeout";
-    setTimeout(function(){thesisBlockNone();},1000);
+    setTimeout(function(){thesisBlockNone();},500);
     thesismodal.style.opacity= "0.0" ;
     if (thesismodal.classList.contains("projectmodalfadein")) {
         thesismodal.classList.remove("projectmodalfadein");
@@ -116,65 +187,262 @@ function thesisBlockNone(){
 }
 
 istwtClose.onclick = function () {
-    istwtmodal.style.display = "none";
+    istwtmodal.className += " projectmodalfadeout";
+    setTimeout(function(){istwtBlockNone();},500);
+    istwtmodal.style.opacity= "0.0" ;
+    if (istwtmodal.classList.contains("projectmodalfadein")) {
+        istwtmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 istwtCtc.onclick = function () {
-    istwtmodal.style.display = "none";
+    istwtmodal.className += " projectmodalfadeout";
+    setTimeout(function(){istwtBlockNone();},500);
+    istwtmodal.style.opacity= "0.0" ;
+    if (istwtmodal.classList.contains("projectmodalfadein")) {
+        istwtmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function istwtBlockNone(){
+    istwtmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 lumberClose.onclick = function () {
-    lumbermodal.style.display = "none";
+    lumbermodal.className += " projectmodalfadeout";
+    setTimeout(function(){lumberBlockNone();},500);
+    lumbermodal.style.opacity= "0.0" ;
+    if (lumbermodal.classList.contains("projectmodalfadein")) {
+        lumbermodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 lumberCtc.onclick = function () {
-    lumbermodal.style.display = "none";
+    lumbermodal.className += " projectmodalfadeout";
+    setTimeout(function(){lumberBlockNone();},500);
+    lumbermodal.style.opacity= "0.0" ;
+    if (lumbermodal.classList.contains("projectmodalfadein")) {
+        lumbermodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function lumberBlockNone(){
+    lumbermodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 awdClose.onclick = function () {
-    awdmodal.style.display = "none";
+    awdmodal.className += " projectmodalfadeout";
+    setTimeout(function(){awdBlockNone();},500);
+    awdmodal.style.opacity= "0.0" ;
+    if (awdmodal.classList.contains("projectmodalfadein")) {
+        awdmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 awdCtc.onclick = function () {
-    awdmodal.style.display = "none";
+    awdmodal.className += " projectmodalfadeout";
+    setTimeout(function(){awdBlockNone();},500);
+    awdmodal.style.opacity= "0.0" ;
+    if (awdmodal.classList.contains("projectmodalfadein")) {
+        awdmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function awdBlockNone(){
+    awdmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 sprakClose.onclick = function () {
-    sprakmodal.style.display = "none";
+    sprakmodal.className += " projectmodalfadeout";
+    setTimeout(function(){sprakBlockNone();},500);
+    sprakmodal.style.opacity= "0.0" ;
+    if (sprakmodal.classList.contains("projectmodalfadein")) {
+        sprakmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 sprakCtc.onclick = function () {
-    sprakmodal.style.display = "none";
+    sprakmodal.className += " projectmodalfadeout";
+    setTimeout(function(){sprakBlockNone();},500);
+    sprakmodal.style.opacity= "0.0" ;
+    if (sprakmodal.classList.contains("projectmodalfadein")) {
+        sprakmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function sprakBlockNone(){
+    sprakmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 kramforsClose.onclick = function () {
-    kramforsmodal.style.display = "none";
+    kramforsmodal.className += " projectmodalfadeout";
+    setTimeout(function(){kramforsBlockNone();},500);
+    kramforsmodal.style.opacity= "0.0" ;
+    if (kramforsmodal.classList.contains("projectmodalfadein")) {
+        kramforsmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 kramforsCtc.onclick = function () {
-    kramforsmodal.style.display = "none";
+    kramforsmodal.className += " projectmodalfadeout";
+    setTimeout(function(){kramforsBlockNone();},500);
+    kramforsmodal.style.opacity= "0.0" ;
+    if (kramforsmodal.classList.contains("projectmodalfadein")) {
+        kramforsmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function kramforsBlockNone(){
+    kramforsmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 compClose.onclick = function () {
-    compmodal.style.display = "none";
+    compmodal.className += " projectmodalfadeout";
+    setTimeout(function(){compBlockNone();},500);
+    compmodal.style.opacity= "0.0" ;
+    if (compmodal.classList.contains("projectmodalfadein")) {
+        compmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 compCtc.onclick = function () {
-    compmodal.style.display = "none";
+    compmodal.className += " projectmodalfadeout";
+    setTimeout(function(){compBlockNone();},500);
+    compmodal.style.opacity= "0.0" ;
+    if (compmodal.classList.contains("projectmodalfadein")) {
+        compmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function compBlockNone(){
+    compmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 avfallClose.onclick = function () {
-    avfallmodal.style.display = "none";
+    avfallmodal.className += " projectmodalfadeout";
+    setTimeout(function(){avfallBlockNone();},500);
+    avfallmodal.style.opacity= "0.0" ;
+    if (avfallmodal.classList.contains("projectmodalfadein")) {
+        avfallmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 avfallCtc.onclick = function () {
-    avfallmodal.style.display = "none";
+    avfallmodal.className += " projectmodalfadeout";
+    setTimeout(function(){avfallBlockNone();},500);
+    avfallmodal.style.opacity= "0.0" ;
+    if (avfallmodal.classList.contains("projectmodalfadein")) {
+        avfallmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function avfallBlockNone(){
+    avfallmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 sambClose.onclick = function () {
-    sambmodal.style.display = "none";
+    sambmodal.className += " projectmodalfadeout";
+    setTimeout(function(){sambBlockNone();},500);
+    sambmodal.style.opacity= "0.0" ;
+    if (sambmodal.classList.contains("projectmodalfadein")) {
+        sambmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 sambCtc.onclick = function () {
-    sambmodal.style.display = "none";
+    sambmodal.className += " projectmodalfadeout";
+    setTimeout(function(){sambBlockNone();},500);
+    sambmodal.style.opacity= "0.0" ;
+    if (sambmodal.classList.contains("projectmodalfadein")) {
+        sambmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function sambBlockNone(){
+    sambmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 susannaClose.onclick = function () {
-    susannamodal.style.display = "none";
+    susannamodal.className += " projectmodalfadeout";
+    setTimeout(function(){susannaBlockNone();},500);
+    susannamodal.style.opacity= "0.0" ;
+    if (susannamodal.classList.contains("projectmodalfadein")) {
+        susannamodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 susannaCtc.onclick = function () {
+    susannamodal.className += " projectmodalfadeout";
+    setTimeout(function(){susannaBlockNone();},500);
+    susannamodal.style.opacity= "0.0" ;
+    if (susannamodal.classList.contains("projectmodalfadein")) {
+        susannamodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function susannaBlockNone(){
     susannamodal.style.display = "none";
+
+    console.log("set display to none");
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == thesismodal) {
         thesismodal.className += " projectmodalfadeout";
-        setTimeout(function(){thesisBlockNone();},1000);
+        setTimeout(function(){thesisBlockNone();},500);
         thesismodal.style.opacity= "0.0" ;
         if (thesismodal.classList.contains("projectmodalfadein")) {
             thesismodal.classList.remove("projectmodalfadein");
@@ -184,31 +452,103 @@ window.onclick = function (event) {
         }
     }
     if (event.target == istwtmodal) {
-        istwtmodal.style.display = "none";
+        istwtmodal.className += " projectmodalfadeout";
+        setTimeout(function(){istwtBlockNone();},500);
+        istwtmodal.style.opacity= "0.0" ;
+        if (istwtmodal.classList.contains("projectmodalfadein")) {
+            istwtmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
     }
     if (event.target == lumbermodal) {
-        lumbermodal.style.display = "none";
+        lumbermodal.className += " projectmodalfadeout";
+        setTimeout(function(){lumberBlockNone();},500);
+        lumbermodal.style.opacity= "0.0" ;
+        if (lumbermodal.classList.contains("projectmodalfadein")) {
+            lumbermodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
     }
 	if (event.target == awdmodal) {
-        awdmodal.style.display = "none";
+        awdmodal.className += " projectmodalfadeout";
+        setTimeout(function(){awdBlockNone();},500);
+        awdmodal.style.opacity= "0.0" ;
+        if (awdmodal.classList.contains("projectmodalfadein")) {
+            awdmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
 	}
 
 	if (event.target == sambmodal) {
-	    sambmodal.style.display = "none";
+        sambmodal.className += " projectmodalfadeout";
+        setTimeout(function(){sambBlockNone();},500);
+        sambmodal.style.opacity= "0.0" ;
+        if (sambmodal.classList.contains("projectmodalfadein")) {
+            sambmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
 	}
 	if (event.target == avfallmodal) {
-	    avfallmodal.style.display = "none";
+        avfallmodal.className += " projectmodalfadeout";
+        setTimeout(function(){avfallBlockNone();},500);
+        avfallmodal.style.opacity= "0.0" ;
+        if (avfallmodal.classList.contains("projectmodalfadein")) {
+            avfallmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
 	}
 	if (event.target == compmodal) {
-	    compmodal.style.display = "none";
+        compmodal.className += " projectmodalfadeout";
+        setTimeout(function(){compBlockNone();},500);
+        compmodal.style.opacity= "0.0" ;
+        if (compmodal.classList.contains("projectmodalfadein")) {
+            compmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
 	}
 	if (event.target == kramforsmodal) {
-	    kramforsmodal.style.display = "none";
+        kramforsmodal.className += " projectmodalfadeout";
+        setTimeout(function(){kramforsBlockNone();},500);
+        kramforsmodal.style.opacity= "0.0" ;
+        if (kramforsmodal.classList.contains("projectmodalfadein")) {
+            kramforsmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
 	}
 	if (event.target == sprakmodal) {
-	    sprakmodal.style.display = "none";
+        sprakmodal.className += " projectmodalfadeout";
+        setTimeout(function(){sprakBlockNone();},500);
+        sprakmodal.style.opacity= "0.0" ;
+        if (sprakmodal.classList.contains("projectmodalfadein")) {
+            sprakmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
 	}
 	if (event.target == susannamodal) {
-	    susannamodal.style.display = "none";
+        susannamodal.className += " projectmodalfadeout";
+        setTimeout(function(){susannaBlockNone();},500);
+        susannamodal.style.opacity= "0.0" ;
+        if (susannamodal.classList.contains("projectmodalfadein")) {
+            susannamodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
 	}
 }
