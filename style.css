@@ -359,11 +359,10 @@ body {
         margin-top: 17%;
         padding: 20px;
         padding-bottom: 3%;
-        border: 1px solid #888;
         max-height: 75vh;
         width: 90vw; /* Could be more or less, depending on screen size */
     	overflow: hidden;
-
+        border-radius: 20px;
     }
 
     .projectmodal_wrap {
