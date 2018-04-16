@@ -15,6 +15,13 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
 
     .menupicture{
         width: 100vw;

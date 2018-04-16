@@ -15,7 +15,9 @@ function menuclick() {
         fadeReverse();
         hasrun = false;
         console.log("trying to reverse");
+        setTimeout(function(){portfolioContentZIndexHigher();},1000);
     } else {
+        portfolioContentZIndexLower();
         menuMove();
         backgroundMove();
         fadeMove();
@@ -94,4 +96,15 @@ function fadeReverse() {
     } else {
         console.log("no showmenufade to remove");
     }
+}
+
+
+function portfolioContentZIndexHigher() {
+    portfolio.style.zIndex = "26";
+    console.log("higher");
+}
+
+function portfolioContentZIndexLower() {
+        portfolio.style.zIndex = "12";
+        console.log("lower");
 }
