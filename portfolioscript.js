@@ -10,7 +10,6 @@ var kramforsmodal = document.getElementById("kramforsModal");
 var sprakmodal = document.getElementById("sprakModal");
 var susannamodal = document.getElementById("susannaModal");
 
-
 // Get the button that opens the modal
 var thesisthumb = document.getElementById("thesis");
 var istwtthumb = document.getElementById("istwt");
@@ -48,6 +47,15 @@ var susannaCtc = document.getElementById("susannactc");
 // When the user clicks on the button, open the modal
 thesisthumb.onclick = function () {
     thesismodal.style.display = "block";
+    thesismodal.className += " projectmodalfadein";
+    thesismodal.style.opacity= "1.0" ;
+    if (thesismodal.classList.contains("projectmodalfadeout")) {
+        thesismodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+
 }
 istwtthumb.onclick = function () {
     istwtmodal.style.display = "block";
@@ -80,11 +88,33 @@ susannathumb.onclick = function () {
 
 // When the user clicks on <span> (x), close the modal
 thesisClose.onclick = function () {
-    thesismodal.style.display = "none";
+    thesismodal.className += " projectmodalfadeout";
+    setTimeout(function(){thesisBlockNone();},1000);
+    thesismodal.style.opacity= "0.0" ;
+    if (thesismodal.classList.contains("projectmodalfadein")) {
+        thesismodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
 thesisCtc.onclick = function () {
-    thesismodal.style.display = "none";
+    thesismodal.className += " projectmodalfadeout";
+    setTimeout(function(){thesisBlockNone();},1000);
+    thesismodal.style.opacity= "0.0" ;
+    if (thesismodal.classList.contains("projectmodalfadein")) {
+        thesismodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
 }
+function thesisBlockNone(){
+    thesismodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 istwtClose.onclick = function () {
     istwtmodal.style.display = "none";
 }
@@ -143,7 +173,15 @@ susannaCtc.onclick = function () {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == thesismodal) {
-        thesismodal.style.display = "none";
+        thesismodal.className += " projectmodalfadeout";
+        setTimeout(function(){thesisBlockNone();},1000);
+        thesismodal.style.opacity= "0.0" ;
+        if (thesismodal.classList.contains("projectmodalfadein")) {
+            thesismodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
     }
     if (event.target == istwtmodal) {
         istwtmodal.style.display = "none";
