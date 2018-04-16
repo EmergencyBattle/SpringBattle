@@ -216,8 +216,8 @@ body {
     }
 
     .portfoliowrapper{
-        width: 95vw;
-        height: 95vw;
+        width: 90vw;
+        height: 85vw;
         position: absolute;
         display: block;
         margin-left: auto;
@@ -226,9 +226,8 @@ body {
         margin-bottom: 0;
         left: 0;
         right: 0;
-        bottom: 250px;
+        bottom: 220px;
         top: auto;
-        border-radius: 20%;
         z-index: 7;
     }
 
@@ -240,14 +239,45 @@ body {
     }
 
     .portfoliocontent{
-        padding-top:10%;
-        padding-bottom: 10%;
+        padding-top:0%;
+        padding-bottom: 0%;
         padding-left: 5%;
         padding-right: 5%;
         width: 100%;
         height: 80%;
         overflow-y: scroll;
         z-index:7;
+    }
+
+    .thumbnail {
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top:1%;
+        margin-bottom:1%;
+
+        border-radius: 15px;
+        opacity: 0.8;
+        width: 46%;
+        height: auto;
+        }
+
+        @keyframes opacity {
+        0% {opacity: 0.8}
+        100% {opacity: 1.0}
+        }
+
+        @-webkit-keyframes opacity {
+        0% {opacity: 0.8}
+        100% {opacity: 1.0}
+        }
+
+    .thumbnail:hover {
+        animation-name: opacity;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        cursor: pointer;
     }
 
     .portfoliopicturetop{
@@ -266,8 +296,164 @@ body {
         margin-bottom: 0;
         left: 0;
         right: 0;
-        bottom: 180px;
+        bottom: 200px;
     }
+
+    .portfoliowreathtop{
+        width:99vw;
+        height: auto;
+        z-index: 9;
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        left: 0;
+        right: 0;
+        bottom: 490px;
+    }
+
+
+    /* The Projects Modal (background) */
+    .projectmodal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 50; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: hidden; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .projectmodal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        margin-top: 17%;
+        padding: 20px;
+        padding-bottom: 3%;
+        border: 1px solid #888;
+        max-height: 75vh;
+        width: 90vw; /* Could be more or less, depending on screen size */
+    	overflow: hidden;
+
+    }
+
+    .projectmodal_wrap {
+    	width: 90%;
+    	height: 60vh;
+    	margin: 20px;
+    	margin-top: 30px;
+    	margin-right: 25px;
+    	margin-bottom: 3%;
+    	padding-right: 5px;
+    	overflow: scroll;
+    }
+
+    /* The Close Button */
+    .projectclose {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .projectclose:hover,
+    .projectclose:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+        color: #ff2c53;
+        font-size: 2em;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    h2 {
+        font-family: 'PT Sans', sans-serif;
+        color: #3e3e3e;
+        font-size: 1em;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: -2%;
+        margin-bottom: 6%;
+    }
+
+    p {
+        font-family: 'PT Sans', sans-serif;
+        color: #121212;
+        font-size: 0.9em;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .modalimage{
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .caption {
+        font-family: 'PT Sans', sans-serif;
+        color: #555555;
+        font-size: 0.9em;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+        font-style: italic;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    .ctc{
+        font-family: 'PT Sans', sans-serif;
+        color: #ff2c53;
+        font-size: 2em;
+        display: block;
+        text-align: center;
+        margin-left:auto;
+        margin-right: auto;
+        left: auto;
+        right: auto;
+        opacity: 0.8;
+    }
+
+
+
+    .ctc:hover {
+        cursor: pointer;
+    }
+
+    .clicktocontinue{
+        color: rgba( 0, 0, 0, 0);
+    }
+
+    .cross{
+        animation-name: opacitycross;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    @keyframes opacitycross {
+        0% {opacity: 0.3}
+        50% {opacity: 1.0}
+        100% {opacity: 0.3}
+        }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
