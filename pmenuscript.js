@@ -29,7 +29,7 @@ function menuclick() {
 function menuMove() {
     console.log("the function has started");
     menu.classList.add("showmenulist");
-    menu.style.bottom = "270px";
+    menu.style.bottom = "255px";
     if (menu.classList.contains("hidemenulist")) {
         menu.classList.remove("hidemenulist");
         console.log("removed hidemenulist");
@@ -41,7 +41,7 @@ function menuMove() {
 function menuReverse() {
     console.log("the function has started");
     menu.classList.add("hidemenulist");
-    menu.style.bottom = "-80px";
+    menu.style.bottom = "-95px";
     if (menu.classList.contains("showmenulist")) {
         menu.classList.remove("showmenulist");
         console.log("removed showmenulist");
