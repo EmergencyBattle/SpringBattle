@@ -113,8 +113,8 @@ a:hover, a:active {
 
     .mainimage {
         position: absolute;
-        height: auto;
-        width: 100vw;
+        height: 85vh;
+        width: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -122,6 +122,7 @@ a:hover, a:active {
         right: 0;
         z-index: 1;
         visibility: visible;
+        bottom: 0;
     }
 
     .menuwrapper {
