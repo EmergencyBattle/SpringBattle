@@ -35,6 +35,19 @@ a:hover, a:active {
         overflow: hidden;
     }
 
+    .logoimage {
+        width: 20%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 2%;
+        position: absolute;
+        z-index: 30;
+    }
+
     .menuimage {
         position: absolute;
         height: auto;
