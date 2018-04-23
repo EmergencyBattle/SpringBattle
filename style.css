@@ -561,6 +561,15 @@ a:hover, a:active {
         z-index: 1;
         visibility: visible;
     }
+
+    .aboutwrapper {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0%;
+        z-index: 1;
+        overflow: hidden;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
