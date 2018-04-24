@@ -1071,10 +1071,10 @@ body {
     }
 
     .aboutcontainer{
-        width: 93vw;
-        height: 55vh;
+        width: 80vw;
+        height: 50vh;
         position: absolute;
-        top: 15%;
+        top: 25%;
         background-color: hsl(260, 30%, 45%);
         border-radius: 40px;
         margin-left:auto;
@@ -1091,12 +1091,13 @@ body {
         padding-right: 15px;
         color: hsl(0, 0%, 95%);
         font-family: 'PT Sans', sans-serif;
+        font-size: 1.25em;
     }
 
     h3 {
         font-family: 'PT Sans', sans-serif;
         color: #ff2c53;
-        font-size: 2.5em;
+        font-size: 3em;
         display: block;
         -webkit-margin-before: 0;
         -webkit-margin-after: 0.3em;
