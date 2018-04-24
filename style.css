@@ -800,7 +800,7 @@ body {
 
     .portfoliowrapper{
         width: 90vw;
-        height: 85vw;
+        height: 75vw;
         position: absolute;
         display: block;
         margin-left: auto;
@@ -809,7 +809,7 @@ body {
         margin-bottom: 0;
         left: 0;
         right: 0;
-        bottom: 220px;
+        bottom: 210%;
         top: auto;
         z-index: 7;
     }
@@ -841,7 +841,7 @@ body {
 
         border-radius: 15px;
         opacity: 0.8;
-        width: 46%;
+        width: 29%;
         height: auto;
         }
 
@@ -879,7 +879,7 @@ body {
         margin-bottom: 0;
         left: 0;
         right: 0;
-        bottom: 200px;
+        bottom: 15%;
     }
 
     .portfoliowreathtop{
@@ -894,7 +894,7 @@ body {
         margin-bottom: 0;
         left: 0;
         right: 0;
-        bottom: 490px;
+        bottom: 60%;
     }
 
 
