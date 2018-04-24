@@ -19,7 +19,11 @@
     </picture>
 
     <div class="homewrapper">
-        <img src="images/home/MobileWave.gif" alt="Main image" class="mainimage">
+        <picture class="mainpicture">
+            <source srcset="images/home/MobileWave.gif" media="(max-width: 600px)"id="menuimagemobile">
+            <source srcset="images/home/TabletWave.gif" id="menuimage">
+                <img src="images/home/MobileWave.gif" alt="Main image" class="mainimage">
+        </picture>
     </div>
 
     <div class="menuwrapper">
