@@ -953,7 +953,7 @@ body {
     }
 
     .projectmodal_wrap {
-        width: 90%;
+        width: 95%;
         height: 60vh;
         margin: 20px;
         margin-top: 30px;
@@ -1263,10 +1263,5 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up)/////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 992px) and (orientation:landscape){
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up)/////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 1200px) and (orientation:landscape){
 
 }
