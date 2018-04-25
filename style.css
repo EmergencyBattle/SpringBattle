@@ -1394,4 +1394,16 @@ body {
         height: 65vh;
     }
 
+    .portfoliowreathbottom{
+        width:70vw;
+        height: auto;
+        bottom: 10%;
+    }
+
+    .portfoliowreathtop{
+        width:70vw;
+        height: auto;
+        bottom: 55%;
+    }
+
 }
