@@ -1156,12 +1156,44 @@ body {
 
 }
 
+/* Medium devices (portrait tablets, 769px and up)/////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 769px) and (orientation:portrait) {
+
+    .mainimage {
+        position: absolute;
+        height: auto;
+        width: 100vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        visibility: visible;
+        bottom: 0;
+    }
+
+    .logoimage {
+        width: auto;
+        height: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 2%;
+        position: absolute;
+        z-index: 30;
+    }
+
+}
+
 /* Large devices (laptops/desktops, 992px and up)/////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (orientation:landscape){
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up)/////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (orientation:landscape){
 
 }
