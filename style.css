@@ -448,6 +448,19 @@ body {
         margin-right: 15%;
     }
 
+    p a:link, a:visited  {
+        text-decoration: none;
+        color: #ff2c53;
+        font-weight: bold;
+
+    }
+
+    p a:hover, a:active {
+        text-decoration: none;
+        color: #ff2c53;
+        font-weight: bold;
+    }
+
     .modalimage{
         max-width: 90%;
         display: block;
