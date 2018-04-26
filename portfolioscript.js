@@ -736,8 +736,65 @@ function heartfeltBlockNone(){
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var hogguardmodal = document.getElementById("hogguardModal");
+var hogguardthumb = document.getElementById("hogguard");
+var hogguardClose = document.getElementById("hogguardclose");
+var hogguardCtc = document.getElementById("hogguardctc");
+
+hogguardthumb.onclick = function () {
+    hogguardmodal.style.display = "block";
+    hogguardmodal.className += " projectmodalfadein";
+    hogguardmodal.style.opacity= "1.0" ;
+    if (hogguardmodal.classList.contains("projectmodalfadeout")) {
+        hogguardmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+hogguardClose.onclick = function () {
+    hogguardmodal.className += " projectmodalfadeout";
+    setTimeout(function(){hogguardBlockNone();},500);
+    hogguardmodal.style.opacity= "0.0" ;
+    if (hogguardmodal.classList.contains("projectmodalfadein")) {
+        hogguardmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+hogguardCtc.onclick = function () {
+    hogguardmodal.className += " projectmodalfadeout";
+    setTimeout(function(){hogguardBlockNone();},500);
+    hogguardmodal.style.opacity= "0.0" ;
+    if (hogguardmodal.classList.contains("projectmodalfadein")) {
+        hogguardmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function hogguardBlockNone(){
+    hogguardmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
+    if (event.target == hogguardmodal) {
+            hogguardmodal.className += " projectmodalfadeout";
+            setTimeout(function(){hogguardBlockNone();},500);
+            hogguardmodal.style.opacity= "0.0" ;
+            if (hogguardmodal.classList.contains("projectmodalfadein")) {
+                hogguardmodal.classList.remove("projectmodalfadein");
+                console.log("removed projectmodalfadein");
+            } else {
+                console.log("no projectmodalfadein to remove");
+            }
+    	}
     if (event.target == heartfeltmodal) {
             heartfeltmodal.className += " projectmodalfadeout";
             setTimeout(function(){heartfeltBlockNone();},500);
