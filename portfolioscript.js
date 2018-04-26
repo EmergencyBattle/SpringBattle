@@ -874,8 +874,65 @@ function tabetaiBlockNone(){
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var bunnymodal = document.getElementById("bunnyModal");
+var bunnythumb = document.getElementById("bunny");
+var bunnyClose = document.getElementById("bunnyclose");
+var bunnyCtc = document.getElementById("bunnyctc");
+
+bunnythumb.onclick = function () {
+    bunnymodal.style.display = "block";
+    bunnymodal.className += " projectmodalfadein";
+    bunnymodal.style.opacity= "1.0" ;
+    if (bunnymodal.classList.contains("projectmodalfadeout")) {
+        bunnymodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+bunnyClose.onclick = function () {
+    bunnymodal.className += " projectmodalfadeout";
+    setTimeout(function(){bunnyBlockNone();},500);
+    bunnymodal.style.opacity= "0.0" ;
+    if (bunnymodal.classList.contains("projectmodalfadein")) {
+        bunnymodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+bunnyCtc.onclick = function () {
+    bunnymodal.className += " projectmodalfadeout";
+    setTimeout(function(){bunnyBlockNone();},500);
+    bunnymodal.style.opacity= "0.0" ;
+    if (bunnymodal.classList.contains("projectmodalfadein")) {
+        bunnymodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function bunnyBlockNone(){
+    bunnymodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
+    if (event.target == bunnymodal) {
+            bunnymodal.className += " projectmodalfadeout";
+            setTimeout(function(){bunnyBlockNone();},500);
+            bunnymodal.style.opacity= "0.0" ;
+            if (bunnymodal.classList.contains("projectmodalfadein")) {
+                bunnymodal.classList.remove("projectmodalfadein");
+                console.log("removed projectmodalfadein");
+            } else {
+                console.log("no projectmodalfadein to remove");
+            }
+    	}
     if (event.target == tabetaimodal) {
             tabetaimodal.className += " projectmodalfadeout";
             setTimeout(function(){tabetaiBlockNone();},500);
