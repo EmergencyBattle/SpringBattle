@@ -599,10 +599,66 @@ function choppityBlockNone(){
 
     console.log("set display to none");
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var demonservantmodal = document.getElementById("demonservantModal");
+var demonservantthumb = document.getElementById("demonservant");
+var demonservantClose = document.getElementById("demonservantclose");
+var demonservantCtc = document.getElementById("demonservantctc");
+
+demonservantthumb.onclick = function () {
+    demonservantmodal.style.display = "block";
+    demonservantmodal.className += " projectmodalfadein";
+    demonservantmodal.style.opacity= "1.0" ;
+    if (demonservantmodal.classList.contains("projectmodalfadeout")) {
+        demonservantmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+demonservantClose.onclick = function () {
+    demonservantmodal.className += " projectmodalfadeout";
+    setTimeout(function(){demonservantBlockNone();},500);
+    demonservantmodal.style.opacity= "0.0" ;
+    if (demonservantmodal.classList.contains("projectmodalfadein")) {
+        demonservantmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+demonservantCtc.onclick = function () {
+    demonservantmodal.className += " projectmodalfadeout";
+    setTimeout(function(){demonservantBlockNone();},500);
+    demonservantmodal.style.opacity= "0.0" ;
+    if (demonservantmodal.classList.contains("projectmodalfadein")) {
+        demonservantmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function demonservantBlockNone(){
+    demonservantmodal.style.display = "none";
+
+    console.log("set display to none");
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
+    if (event.target == demonservantmodal) {
+            demonservantmodal.className += " projectmodalfadeout";
+            setTimeout(function(){demonservantBlockNone();},500);
+            demonservantmodal.style.opacity= "0.0" ;
+            if (demonservantmodal.classList.contains("projectmodalfadein")) {
+                demonservantmodal.classList.remove("projectmodalfadein");
+                console.log("removed projectmodalfadein");
+            } else {
+                console.log("no projectmodalfadein to remove");
+            }
+    	}
     if (event.target == thesismodal) {
         thesismodal.className += " projectmodalfadeout";
         setTimeout(function(){thesisBlockNone();},500);
