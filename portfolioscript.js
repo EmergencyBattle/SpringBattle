@@ -828,8 +828,65 @@ function cupidBlockNone(){
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var tabetaimodal = document.getElementById("tabetaiModal");
+var tabetaithumb = document.getElementById("tabetai");
+var tabetaiClose = document.getElementById("tabetaiclose");
+var tabetaiCtc = document.getElementById("tabetaictc");
+
+tabetaithumb.onclick = function () {
+    tabetaimodal.style.display = "block";
+    tabetaimodal.className += " projectmodalfadein";
+    tabetaimodal.style.opacity= "1.0" ;
+    if (tabetaimodal.classList.contains("projectmodalfadeout")) {
+        tabetaimodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+tabetaiClose.onclick = function () {
+    tabetaimodal.className += " projectmodalfadeout";
+    setTimeout(function(){tabetaiBlockNone();},500);
+    tabetaimodal.style.opacity= "0.0" ;
+    if (tabetaimodal.classList.contains("projectmodalfadein")) {
+        tabetaimodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+tabetaiCtc.onclick = function () {
+    tabetaimodal.className += " projectmodalfadeout";
+    setTimeout(function(){tabetaiBlockNone();},500);
+    tabetaimodal.style.opacity= "0.0" ;
+    if (tabetaimodal.classList.contains("projectmodalfadein")) {
+        tabetaimodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function tabetaiBlockNone(){
+    tabetaimodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
+    if (event.target == tabetaimodal) {
+            tabetaimodal.className += " projectmodalfadeout";
+            setTimeout(function(){tabetaiBlockNone();},500);
+            tabetaimodal.style.opacity= "0.0" ;
+            if (tabetaimodal.classList.contains("projectmodalfadein")) {
+                tabetaimodal.classList.remove("projectmodalfadein");
+                console.log("removed projectmodalfadein");
+            } else {
+                console.log("no projectmodalfadein to remove");
+            }
+    	}
     if (event.target == cupidmodal) {
             cupidmodal.className += " projectmodalfadeout";
             setTimeout(function(){cupidBlockNone();},500);
