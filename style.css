@@ -641,14 +641,27 @@ body {
         -webkit-text-stroke-color: rgb(255, 255, 255);
     }
 
-    .aboutcontent a:link, a:visited  {
+    .aboutcontent a:link  {
         text-decoration: none;
         color: hsl(50, 60%, 80%);
         font-weight: bold;
 
     }
 
-    .aboutcontent a:hover, a:active {
+    .aboutcontent  a:visited{
+        text-decoration: none;
+        color: hsl(50, 60%, 80%);
+        font-weight: bold;
+
+    }
+
+    .aboutcontent a:hover {
+        text-decoration: none;
+        color: hsl(0, 0%, 95%);
+        font-weight: bold;
+    }
+
+    .aboutcontent  a:active {
         text-decoration: none;
         color: hsl(0, 0%, 95%);
         font-weight: bold;
@@ -1290,14 +1303,27 @@ body {
         -webkit-text-stroke-color: rgb(255, 255, 255);
     }
 
-    .aboutcontent a:link, a:visited  {
+    .aboutcontent a:link  {
         text-decoration: none;
         color: hsl(50, 60%, 80%);
         font-weight: bold;
 
     }
 
-    .aboutcontent a:hover, a:active {
+    .aboutcontent  a:visited{
+        text-decoration: none;
+        color: hsl(50, 60%, 80%);
+        font-weight: bold;
+
+    }
+
+    .aboutcontent a:hover {
+        text-decoration: none;
+        color: hsl(0, 0%, 95%);
+        font-weight: bold;
+    }
+
+    .aboutcontent  a:active {
         text-decoration: none;
         color: hsl(0, 0%, 95%);
         font-weight: bold;
