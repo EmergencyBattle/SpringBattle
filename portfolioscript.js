@@ -689,10 +689,66 @@ function hijabBlockNone(){
 
     console.log("set display to none");
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var heartfeltmodal = document.getElementById("heartfeltModal");
+var heartfeltthumb = document.getElementById("heartfelt");
+var heartfeltClose = document.getElementById("heartfeltclose");
+var heartfeltCtc = document.getElementById("heartfeltctc");
+
+heartfeltthumb.onclick = function () {
+    heartfeltmodal.style.display = "block";
+    heartfeltmodal.className += " projectmodalfadein";
+    heartfeltmodal.style.opacity= "1.0" ;
+    if (heartfeltmodal.classList.contains("projectmodalfadeout")) {
+        heartfeltmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+heartfeltClose.onclick = function () {
+    heartfeltmodal.className += " projectmodalfadeout";
+    setTimeout(function(){heartfeltBlockNone();},500);
+    heartfeltmodal.style.opacity= "0.0" ;
+    if (heartfeltmodal.classList.contains("projectmodalfadein")) {
+        heartfeltmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+heartfeltCtc.onclick = function () {
+    heartfeltmodal.className += " projectmodalfadeout";
+    setTimeout(function(){heartfeltBlockNone();},500);
+    heartfeltmodal.style.opacity= "0.0" ;
+    if (heartfeltmodal.classList.contains("projectmodalfadein")) {
+        heartfeltmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function heartfeltBlockNone(){
+    heartfeltmodal.style.display = "none";
+
+    console.log("set display to none");
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
+    if (event.target == heartfeltmodal) {
+            heartfeltmodal.className += " projectmodalfadeout";
+            setTimeout(function(){heartfeltBlockNone();},500);
+            heartfeltmodal.style.opacity= "0.0" ;
+            if (heartfeltmodal.classList.contains("projectmodalfadein")) {
+                heartfeltmodal.classList.remove("projectmodalfadein");
+                console.log("removed projectmodalfadein");
+            } else {
+                console.log("no projectmodalfadein to remove");
+            }
+    	}
     if (event.target == hijabmodal) {
             hijabmodal.className += " projectmodalfadeout";
             setTimeout(function(){hijabBlockNone();},500);
