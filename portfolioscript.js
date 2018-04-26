@@ -782,8 +782,65 @@ function hogguardBlockNone(){
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var cupidmodal = document.getElementById("cupidModal");
+var cupidthumb = document.getElementById("cupid");
+var cupidClose = document.getElementById("cupidclose");
+var cupidCtc = document.getElementById("cupidctc");
+
+cupidthumb.onclick = function () {
+    cupidmodal.style.display = "block";
+    cupidmodal.className += " projectmodalfadein";
+    cupidmodal.style.opacity= "1.0" ;
+    if (cupidmodal.classList.contains("projectmodalfadeout")) {
+        cupidmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+cupidClose.onclick = function () {
+    cupidmodal.className += " projectmodalfadeout";
+    setTimeout(function(){cupidBlockNone();},500);
+    cupidmodal.style.opacity= "0.0" ;
+    if (cupidmodal.classList.contains("projectmodalfadein")) {
+        cupidmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+cupidCtc.onclick = function () {
+    cupidmodal.className += " projectmodalfadeout";
+    setTimeout(function(){cupidBlockNone();},500);
+    cupidmodal.style.opacity= "0.0" ;
+    if (cupidmodal.classList.contains("projectmodalfadein")) {
+        cupidmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function cupidBlockNone(){
+    cupidmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
+    if (event.target == cupidmodal) {
+            cupidmodal.className += " projectmodalfadeout";
+            setTimeout(function(){cupidBlockNone();},500);
+            cupidmodal.style.opacity= "0.0" ;
+            if (cupidmodal.classList.contains("projectmodalfadein")) {
+                cupidmodal.classList.remove("projectmodalfadein");
+                console.log("removed projectmodalfadein");
+            } else {
+                console.log("no projectmodalfadein to remove");
+            }
+    	}
     if (event.target == hogguardmodal) {
             hogguardmodal.className += " projectmodalfadeout";
             setTimeout(function(){hogguardBlockNone();},500);
