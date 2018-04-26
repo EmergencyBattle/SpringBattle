@@ -46,120 +46,51 @@ function thesisBlockNone(){
     console.log("set display to none");
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == thesismodal) {
-        thesismodal.className += " projectmodalfadeout";
-        setTimeout(function(){thesisBlockNone();},500);
-        thesismodal.style.opacity= "0.0" ;
-        if (thesismodal.classList.contains("projectmodalfadein")) {
-            thesismodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-    }
-    if (event.target == istwtmodal) {
-        istwtmodal.className += " projectmodalfadeout";
-        setTimeout(function(){istwtBlockNone();},500);
-        istwtmodal.style.opacity= "0.0" ;
-        if (istwtmodal.classList.contains("projectmodalfadein")) {
-            istwtmodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-    }
-    if (event.target == lumbermodal) {
-        lumbermodal.className += " projectmodalfadeout";
-        setTimeout(function(){lumberBlockNone();},500);
-        lumbermodal.style.opacity= "0.0" ;
-        if (lumbermodal.classList.contains("projectmodalfadein")) {
-            lumbermodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-    }
-	if (event.target == awdmodal) {
-        awdmodal.className += " projectmodalfadeout";
-        setTimeout(function(){awdBlockNone();},500);
-        awdmodal.style.opacity= "0.0" ;
-        if (awdmodal.classList.contains("projectmodalfadein")) {
-            awdmodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-	}
 
-	if (event.target == sambmodal) {
-        sambmodal.className += " projectmodalfadeout";
-        setTimeout(function(){sambBlockNone();},500);
-        sambmodal.style.opacity= "0.0" ;
-        if (sambmodal.classList.contains("projectmodalfadein")) {
-            sambmodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-	}
-	if (event.target == avfallmodal) {
-        avfallmodal.className += " projectmodalfadeout";
-        setTimeout(function(){avfallBlockNone();},500);
-        avfallmodal.style.opacity= "0.0" ;
-        if (avfallmodal.classList.contains("projectmodalfadein")) {
-            avfallmodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-	}
-	if (event.target == compmodal) {
-        compmodal.className += " projectmodalfadeout";
-        setTimeout(function(){compBlockNone();},500);
-        compmodal.style.opacity= "0.0" ;
-        if (compmodal.classList.contains("projectmodalfadein")) {
-            compmodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-	}
-	if (event.target == kramforsmodal) {
-        kramforsmodal.className += " projectmodalfadeout";
-        setTimeout(function(){kramforsBlockNone();},500);
-        kramforsmodal.style.opacity= "0.0" ;
-        if (kramforsmodal.classList.contains("projectmodalfadein")) {
-            kramforsmodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-	}
-	if (event.target == sprakmodal) {
-        sprakmodal.className += " projectmodalfadeout";
-        setTimeout(function(){sprakBlockNone();},500);
-        sprakmodal.style.opacity= "0.0" ;
-        if (sprakmodal.classList.contains("projectmodalfadein")) {
-            sprakmodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-	}
-	if (event.target == susannamodal) {
-        susannamodal.className += " projectmodalfadeout";
-        setTimeout(function(){susannaBlockNone();},500);
-        susannamodal.style.opacity= "0.0" ;
-        if (susannamodal.classList.contains("projectmodalfadein")) {
-            susannamodal.classList.remove("projectmodalfadein");
-            console.log("removed projectmodalfadein");
-        } else {
-            console.log("no projectmodalfadein to remove");
-        }
-	}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var alimermmodal = document.getElementById("alimermModal");
+var alimermthumb = document.getElementById("alimerm");
+var alimermClose = document.getElementById("alimermclose");
+var alimermCtc = document.getElementById("alimermctc");
+
+alimermthumb.onclick = function () {
+    alimermmodal.style.display = "block";
+    alimermmodal.className += " projectmodalfadein";
+    alimermmodal.style.opacity= "1.0" ;
+    if (alimermmodal.classList.contains("projectmodalfadeout")) {
+        alimermmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+alimermClose.onclick = function () {
+    alimermmodal.className += " projectmodalfadeout";
+    setTimeout(function(){alimermBlockNone();},500);
+    alimermmodal.style.opacity= "0.0" ;
+    if (alimermmodal.classList.contains("projectmodalfadein")) {
+        alimermmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+alimermCtc.onclick = function () {
+    alimermmodal.className += " projectmodalfadeout";
+    setTimeout(function(){alimermBlockNone();},500);
+    alimermmodal.style.opacity= "0.0" ;
+    if (alimermmodal.classList.contains("projectmodalfadein")) {
+        alimermmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function alimermBlockNone(){
+    alimermmodal.style.display = "none";
+
+    console.log("set display to none");
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -574,4 +505,189 @@ function susannaBlockNone(){
     susannamodal.style.display = "none";
 
     console.log("set display to none");
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var etherealmodal = document.getElementById("etherealModal");
+var etherealthumb = document.getElementById("ethereal");
+var etherealClose = document.getElementById("etherealclose");
+var etherealCtc = document.getElementById("etherealctc");
+
+etherealthumb.onclick = function () {
+    etherealmodal.style.display = "block";
+    etherealmodal.className += " projectmodalfadein";
+    etherealmodal.style.opacity= "1.0" ;
+    if (etherealmodal.classList.contains("projectmodalfadeout")) {
+        etherealmodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+etherealClose.onclick = function () {
+    etherealmodal.className += " projectmodalfadeout";
+    setTimeout(function(){etherealBlockNone();},500);
+    etherealmodal.style.opacity= "0.0" ;
+    if (etherealmodal.classList.contains("projectmodalfadein")) {
+        etherealmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+etherealCtc.onclick = function () {
+    etherealmodal.className += " projectmodalfadeout";
+    setTimeout(function(){etherealBlockNone();},500);
+    etherealmodal.style.opacity= "0.0" ;
+    if (etherealmodal.classList.contains("projectmodalfadein")) {
+        etherealmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function etherealBlockNone(){
+    etherealmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == thesismodal) {
+        thesismodal.className += " projectmodalfadeout";
+        setTimeout(function(){thesisBlockNone();},500);
+        thesismodal.style.opacity= "0.0" ;
+        if (thesismodal.classList.contains("projectmodalfadein")) {
+            thesismodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+    }
+    if (event.target == istwtmodal) {
+        istwtmodal.className += " projectmodalfadeout";
+        setTimeout(function(){istwtBlockNone();},500);
+        istwtmodal.style.opacity= "0.0" ;
+        if (istwtmodal.classList.contains("projectmodalfadein")) {
+            istwtmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+    }
+    if (event.target == lumbermodal) {
+        lumbermodal.className += " projectmodalfadeout";
+        setTimeout(function(){lumberBlockNone();},500);
+        lumbermodal.style.opacity= "0.0" ;
+        if (lumbermodal.classList.contains("projectmodalfadein")) {
+            lumbermodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+    }
+	if (event.target == awdmodal) {
+        awdmodal.className += " projectmodalfadeout";
+        setTimeout(function(){awdBlockNone();},500);
+        awdmodal.style.opacity= "0.0" ;
+        if (awdmodal.classList.contains("projectmodalfadein")) {
+            awdmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+
+	if (event.target == sambmodal) {
+        sambmodal.className += " projectmodalfadeout";
+        setTimeout(function(){sambBlockNone();},500);
+        sambmodal.style.opacity= "0.0" ;
+        if (sambmodal.classList.contains("projectmodalfadein")) {
+            sambmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+	if (event.target == avfallmodal) {
+        avfallmodal.className += " projectmodalfadeout";
+        setTimeout(function(){avfallBlockNone();},500);
+        avfallmodal.style.opacity= "0.0" ;
+        if (avfallmodal.classList.contains("projectmodalfadein")) {
+            avfallmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+	if (event.target == compmodal) {
+        compmodal.className += " projectmodalfadeout";
+        setTimeout(function(){compBlockNone();},500);
+        compmodal.style.opacity= "0.0" ;
+        if (compmodal.classList.contains("projectmodalfadein")) {
+            compmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+	if (event.target == kramforsmodal) {
+        kramforsmodal.className += " projectmodalfadeout";
+        setTimeout(function(){kramforsBlockNone();},500);
+        kramforsmodal.style.opacity= "0.0" ;
+        if (kramforsmodal.classList.contains("projectmodalfadein")) {
+            kramforsmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+	if (event.target == sprakmodal) {
+        sprakmodal.className += " projectmodalfadeout";
+        setTimeout(function(){sprakBlockNone();},500);
+        sprakmodal.style.opacity= "0.0" ;
+        if (sprakmodal.classList.contains("projectmodalfadein")) {
+            sprakmodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+	if (event.target == susannamodal) {
+        susannamodal.className += " projectmodalfadeout";
+        setTimeout(function(){susannaBlockNone();},500);
+        susannamodal.style.opacity= "0.0" ;
+        if (susannamodal.classList.contains("projectmodalfadein")) {
+            susannamodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+    if (event.target == alimermmodal) {
+            alimermmodal.className += " projectmodalfadeout";
+            setTimeout(function(){alimermBlockNone();},500);
+            alimermmodal.style.opacity= "0.0" ;
+            if (alimermmodal.classList.contains("projectmodalfadein")) {
+                alimermmodal.classList.remove("projectmodalfadein");
+                console.log("removed projectmodalfadein");
+            } else {
+                console.log("no projectmodalfadein to remove");
+            }
+    	}
+        if (event.target == etherealmodal) {
+                etherealmodal.className += " projectmodalfadeout";
+                setTimeout(function(){etherealBlockNone();},500);
+                etherealmodal.style.opacity= "0.0" ;
+                if (etherealmodal.classList.contains("projectmodalfadein")) {
+                    etherealmodal.classList.remove("projectmodalfadein");
+                    console.log("removed projectmodalfadein");
+                } else {
+                    console.log("no projectmodalfadein to remove");
+                }
+        	}
 }
