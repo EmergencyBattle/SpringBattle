@@ -555,6 +555,52 @@ function etherealBlockNone(){
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var choppitymodal = document.getElementById("choppityModal");
+var choppitythumb = document.getElementById("choppity");
+var choppityClose = document.getElementById("choppityclose");
+var choppityCtc = document.getElementById("choppityctc");
+
+choppitythumb.onclick = function () {
+    choppitymodal.style.display = "block";
+    choppitymodal.className += " projectmodalfadein";
+    choppitymodal.style.opacity= "1.0" ;
+    if (choppitymodal.classList.contains("projectmodalfadeout")) {
+        choppitymodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+choppityClose.onclick = function () {
+    choppitymodal.className += " projectmodalfadeout";
+    setTimeout(function(){choppityBlockNone();},500);
+    choppitymodal.style.opacity= "0.0" ;
+    if (choppitymodal.classList.contains("projectmodalfadein")) {
+        choppitymodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+choppityCtc.onclick = function () {
+    choppitymodal.className += " projectmodalfadeout";
+    setTimeout(function(){choppityBlockNone();},500);
+    choppitymodal.style.opacity= "0.0" ;
+    if (choppitymodal.classList.contains("projectmodalfadein")) {
+        choppitymodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function choppityBlockNone(){
+    choppitymodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == thesismodal) {
@@ -669,9 +715,9 @@ window.onclick = function (event) {
         }
 	}
     if (event.target == alimermmodal) {
-            alimermmodal.className += " projectmodalfadeout";
-            setTimeout(function(){alimermBlockNone();},500);
-            alimermmodal.style.opacity= "0.0" ;
+        alimermmodal.className += " projectmodalfadeout";
+        setTimeout(function(){alimermBlockNone();},500);
+        alimermmodal.style.opacity= "0.0" ;
             if (alimermmodal.classList.contains("projectmodalfadein")) {
                 alimermmodal.classList.remove("projectmodalfadein");
                 console.log("removed projectmodalfadein");
@@ -680,11 +726,22 @@ window.onclick = function (event) {
             }
     	}
         if (event.target == etherealmodal) {
-                etherealmodal.className += " projectmodalfadeout";
-                setTimeout(function(){etherealBlockNone();},500);
-                etherealmodal.style.opacity= "0.0" ;
+            etherealmodal.className += " projectmodalfadeout";
+            setTimeout(function(){etherealBlockNone();},500);
+            etherealmodal.style.opacity= "0.0" ;
                 if (etherealmodal.classList.contains("projectmodalfadein")) {
                     etherealmodal.classList.remove("projectmodalfadein");
+                    console.log("removed projectmodalfadein");
+                } else {
+                    console.log("no projectmodalfadein to remove");
+                }
+        }
+        if (event.target == choppitymodal) {
+                choppitymodal.className += " projectmodalfadeout";
+                setTimeout(function(){choppityBlockNone();},500);
+                choppitymodal.style.opacity= "0.0" ;
+                if (choppitymodal.classList.contains("projectmodalfadein")) {
+                    choppitymodal.classList.remove("projectmodalfadein");
                     console.log("removed projectmodalfadein");
                 } else {
                     console.log("no projectmodalfadein to remove");
