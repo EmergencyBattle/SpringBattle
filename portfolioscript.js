@@ -9,6 +9,7 @@ var compmodal = document.getElementById("compModal");
 var kramforsmodal = document.getElementById("kramforsModal");
 var sprakmodal = document.getElementById("sprakModal");
 var susannamodal = document.getElementById("susannaModal");
+var etherealmodal = document.getElementById("etherealModal");
 
 // Get the button that opens the modal
 var thesisthumb = document.getElementById("thesis");
@@ -21,6 +22,7 @@ var sprakthumb = document.getElementById("sprak");
 var kramforsthumb = document.getElementById("kramfors");
 var compthumb = document.getElementById("comp");
 var susannathumb = document.getElementById("susanna");
+var etherealthumb = document.getElementById("ethereal");
 
 // Get the <span> element that closes the modal
 var thesisClose = document.getElementById("thesisclose");
@@ -43,6 +45,8 @@ var avfallClose = document.getElementById("avfallclose");
 var avfallCtc = document.getElementById("avfallctc");
 var susannaClose = document.getElementById("susannaclose");
 var susannaCtc = document.getElementById("susannactc");
+var etherealClose = document.getElementById("etherealclose");
+var etherealCtc = document.getElementById("etherealctc");
 
 // When the user clicks on the button, open the modal
 thesisthumb.onclick = function () {
@@ -151,6 +155,17 @@ susannathumb.onclick = function () {
     susannamodal.style.opacity= "1.0" ;
     if (susannamodal.classList.contains("projectmodalfadeout")) {
         susannamodal.classList.remove("projectmodalfadeout");
+        console.log("removed projectmodalfadeout");
+    } else {
+        console.log("no projectmodalfadeout to remove");
+    }
+}
+etherealthumb.onclick = function () {
+    etherealmodal.style.display = "block";
+    etherealmodal.className += " projectmodalfadein";
+    etherealmodal.style.opacity= "1.0" ;
+    if (etherealmodal.classList.contains("projectmodalfadeout")) {
+        etherealmodal.classList.remove("projectmodalfadeout");
         console.log("removed projectmodalfadeout");
     } else {
         console.log("no projectmodalfadeout to remove");
@@ -438,6 +453,34 @@ function susannaBlockNone(){
     console.log("set display to none");
 }
 
+etherealClose.onclick = function () {
+    etherealmodal.className += " projectmodalfadeout";
+    setTimeout(function(){etherealBlockNone();},500);
+    etherealmodal.style.opacity= "0.0" ;
+    if (etherealmodal.classList.contains("projectmodalfadein")) {
+        etherealmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+etherealCtc.onclick = function () {
+    etherealmodal.className += " projectmodalfadeout";
+    setTimeout(function(){etherealBlockNone();},500);
+    etherealmodal.style.opacity= "0.0" ;
+    if (etherealmodal.classList.contains("projectmodalfadein")) {
+        etherealmodal.classList.remove("projectmodalfadein");
+        console.log("removed projectmodalfadein");
+    } else {
+        console.log("no projectmodalfadein to remove");
+    }
+}
+function etherealBlockNone(){
+    etherealmodal.style.display = "none";
+
+    console.log("set display to none");
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == thesismodal) {
@@ -546,6 +589,17 @@ window.onclick = function (event) {
         susannamodal.style.opacity= "0.0" ;
         if (susannamodal.classList.contains("projectmodalfadein")) {
             susannamodal.classList.remove("projectmodalfadein");
+            console.log("removed projectmodalfadein");
+        } else {
+            console.log("no projectmodalfadein to remove");
+        }
+	}
+    if (event.target == etherealmodal) {
+        etherealmodal.className += " projectmodalfadeout";
+        setTimeout(function(){etherealBlockNone();},500);
+        etherealmodal.style.opacity= "0.0" ;
+        if (etherealmodal.classList.contains("projectmodalfadein")) {
+            etherealmodal.classList.remove("projectmodalfadein");
             console.log("removed projectmodalfadein");
         } else {
             console.log("no projectmodalfadein to remove");

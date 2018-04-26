@@ -1179,6 +1179,15 @@ body {
         right: auto;
     }
 
+    .modalimageportrait{
+        max-width: 69%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        right: auto;
+    }
+
     .caption {
         font-family: 'PT Sans', sans-serif;
         color: #555555;
@@ -1387,6 +1396,9 @@ body {
                 font-size: 1.5em;
             }
 
+            .modalimageportrait{
+                max-width: 36%;
+            }
 
             .caption {
                 font-size: 1.5em;
