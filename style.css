@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(75, 100%, 70%);
-    background-image: url("images/home/background_medium.png");
+    background-image: url("images/home/background.png");
     background-repeat: repeat;
 }
 
