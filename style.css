@@ -68,11 +68,8 @@ body {
         width: 20%;
         height: auto;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        top: 2%;
+        left: 3%;
+        bottom: 2%;
         position: absolute;
         z-index: 30;
     }
@@ -728,11 +725,8 @@ body {
         width: 20%;
         height: auto;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        top: 2%;
+        left: 3%;
+        bottom: 2%;
         position: absolute;
         z-index: 30;
     }
@@ -1363,6 +1357,10 @@ body {
         width: auto;
         height: 10%;
         top: 2%;
+        left:0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
         .portfoliowrapper{
@@ -1494,6 +1492,10 @@ body {
         width: auto;
         height: 10%;
         top: 2%;
+        left:0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sortinglist{
