@@ -460,21 +460,21 @@ body {
         margin-top: 17%;
         padding: 20px;
         padding-bottom: 3%;
-        max-height: 75%;
-        width: 90%; /* Could be more or less, depending on screen size */
+        max-height: 75vh;
+        width: 90vw; /* Could be more or less, depending on screen size */
     	overflow: hidden;
         border-radius: 20px;
     }
 
     .projectmodal_wrap {
     	width: 90%;
-    	height: 60%;
+    	height: 60vh;
     	margin: 20px;
     	margin-top: 30px;
     	margin-right: 25px;
     	margin-bottom: 3%;
     	padding-right: 5px;
-    	overflow-y: scroll;
+    	overflow-y: auto;
         overflow-x: hidden;
     }
 
