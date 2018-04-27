@@ -56,8 +56,8 @@ body {
     }
 
     .menupicture{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0%;
         z-index: 15;
@@ -114,8 +114,8 @@ body {
     }
 
     .menufade {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background-color: hsla(229, 34%, 34%, 0.0);
         z-index:13;
         position: absolute;
@@ -148,8 +148,8 @@ body {
 
 
     .homewrapper {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0%;
         z-index: 1;
@@ -159,7 +159,7 @@ body {
     .mainimage {
         position: absolute;
         height: auto;
-        width: 100vw;
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -172,7 +172,7 @@ body {
 
     .menuwrapper {
         width: 250px;
-        height: 100vh;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -266,16 +266,16 @@ body {
 
 
     .portfoliopagewrapper{
-        width: 100vw;
-        height: 10vh;
+        width: 100%;
+        height: 10%;
         position: absolute;
         z-index: 26;
         bottom: 0px;
     }
 
     .portfoliowrapper{
-        width: 90vw;
-        height: 85vw;
+        width: 90%;
+        height: 450%;
         position: absolute;
         display: block;
         margin-left: auto;
@@ -332,8 +332,8 @@ body {
     }
 
     .portfolioborderwrapper{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         position: absolute;
         z-index: 2;
     }
@@ -386,7 +386,7 @@ body {
     }
 
     .portfoliowreathbottom{
-        width:99vw;
+        width:99%;
         height: auto;
         z-index: 9;
         display: block;
@@ -397,11 +397,11 @@ body {
         margin-bottom: 0;
         left: 0;
         right: 0;
-        bottom: 200px;
+        bottom: 20%;
     }
 
     .portfoliowreathtop{
-        width:99vw;
+        width:99%;
         height: auto;
         z-index: 9;
         display: block;
@@ -412,7 +412,7 @@ body {
         margin-bottom: 0;
         left: 0;
         right: 0;
-        bottom: 490px;
+        bottom: 65%;
     }
 
 
@@ -460,15 +460,15 @@ body {
         margin-top: 17%;
         padding: 20px;
         padding-bottom: 3%;
-        max-height: 75vh;
-        width: 90vw; /* Could be more or less, depending on screen size */
+        max-height: 75%;
+        width: 90%; /* Could be more or less, depending on screen size */
     	overflow: hidden;
         border-radius: 20px;
     }
 
     .projectmodal_wrap {
     	width: 90%;
-    	height: 60vh;
+    	height: 60%;
     	margin: 20px;
     	margin-top: 30px;
     	margin-right: 25px;
@@ -602,8 +602,8 @@ body {
         }
 
     .aboutwrapper {
-        width: 100vw;
-        height: 70vh;
+        width: 100%;
+        height: 70%;
         position: absolute;
         top: 0%;
         z-index: 26;
@@ -612,10 +612,10 @@ body {
     }
 
     .aboutcontainer{
-        width: 93vw;
-        height: 55vh;
+        width: 93%;
+        height: 55%;
         position: absolute;
-        top: 15%;
+        top: 30%;
         background-color: hsl(260, 30%, 45%);
         border-radius: 40px;
         margin-left:auto;
