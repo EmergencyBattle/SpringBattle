@@ -158,8 +158,8 @@ body {
 
     .mainimage {
         position: absolute;
-        height: 85vh;
-        width: auto;
+        height: auto;
+        width: 100vw;
         display: block;
         margin-left: auto;
         margin-right: auto;
